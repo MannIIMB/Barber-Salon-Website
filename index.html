@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Cuts Unisex Salon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Urbanist', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1588776814546-b75d264ecad1?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-family: 'Bungee Spice', cursive;
+      color: #ffcc00;
+      animation: fadeInDown 2s ease-out;
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .hero p {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      color: #ddd;
+    }
+    .btn-hero {
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      font-size: 1.2rem;
+      background-color: #ffcc00;
+      border: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .btn-hero:hover {
+      transform: scale(1.1);
+    }
+    .section-title {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ffcc00;
+    }
+    .service-card {
+      background-color: #1f1f1f;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(255, 204, 0, 0.2);
+      transition: transform 0.3s;
+      animation: fadeInUp 0.6s ease-in-out;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .gallery-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .gallery-img:hover {
+      transform: scale(1.05);
+    }
+    .cta-footer {
+      background-color: #000;
+      color: #ffcc00;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .cta-footer .btn {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 0.8rem 2rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 50px;
+    }
+    #contact {
+      background-color: #0d0d0d;
+      padding: 4rem 1rem;
+    }
+    #contact label {
+      color: #ffcc00;
+    }
+    #contact input, #contact textarea {
+      background-color: #1c1c1c;
+      color: #fff;
+      border: 1px solid #ffcc00;
+    }
+    #contact .btn {
+      background-color: #ffcc00;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">✂️ Royal Cuts</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="hero" id="home">
+    <h1>✂️ Royal Cuts Barber Salon 💈</h1>
+    <p>Sharp Style, Royal Treatment 👑</p>
+    <a href="#contact" class="btn btn-hero">Book Now</a>
+  </header>
+  <section id="about" class="container py-5">
+    <h2 class="section-title">About Us 👋</h2>
+    <p class="text-center">Welcome to Royal Cuts, your neighborhood hub for fresh styles, clean fades, and confident looks. With a passion for classic grooming and trendy designs, we serve up royal confidence, one cut at a time.</p>
+  </section>
+  <section id="services" class="container py-5">
+    <h2 class="section-title">Our Services 💇‍♂️</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card service-card p-3">
+          <h4 class="text-center">Classic Haircut ✂️</h4>
+          <p class="text-center">Tailored haircuts for all styles, face shapes, and preferences.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card p-3">
+          <h4 class="text-center">Beard Trim 🧔</h4>
+          <p class="text-center">Sharp beard shaping and trimming with razor-precise lines.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card p-3">
+          <h4 class="text-center">Hair Styling 💆‍♂️</h4>
+          <p class="text-center">Modern and trendy hair styling using premium products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" class="container py-5">
+    <h2 class="section-title">Gallery 📸</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="./images/tex fringe.jpg" class="gallery-img" alt="Textured Fringe">
+      </div>
+      <div class="col-md-4">
+        <img src="./images/buzz cut.jpg" class="gallery-img" alt="Buzz Cut">
+      </div>
+      <div class="col-md-4">
+        <img src="./images/middle part.jpg" class="gallery-img" alt="Middle Part">
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2 class="section-title">Contact Us 📬</h2>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+      </div>
+      <button type="submit" class="btn w-100">Send Message</button>
+    </form>
+  </section>
+  <footer class="cta-footer">
+    <h2>Get the Look That Turns Heads 😎</h2>
+    <p>Walk in or book online — your royal grooming experience awaits.</p>
+    <a href="#contact" class="btn">Book Your Appointment</a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
